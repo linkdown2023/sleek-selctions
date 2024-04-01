@@ -5,65 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleek Selections - Master Urdu, Hindi, and Arabic Online</title>
     <style>
-        /* Your existing styles */
+        /* Your existing styles here */
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Sleek Selections</h1>
-        <p>Unlock the Power of Languages & Travel </p>
-        <!-- Navigation Menu -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="travel.html">Travel Assistance</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
-    </header>
+<header>
+    <h1>Sleek Selections</h1>
+    <p>Unlock the Power of Languages & Travel </p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="travel.html">Travel Assistance</a>
+        <a href="contact.html">Contact Me </a>
+    </nav>
+</header>
 
-    <section>
-        <h2>Contact Us</h2>
-        <!-- Your existing section content -->
-        <form id="contactForm" action="http://sleek-selections.top/" method="post">
-            <!-- Your form fields -->
-        </form>
-    </section>
+<section>
+    <h2>Contact Us</h2>
+    <p>Have a question or inquiry related to language learning, travel assistance, or purchase help in Pakistan, India, or Dubai? Feel free to reach out to me for any assistance you may need. Whether you're looking for a travel companion, need help navigating local customs, or require language translation services, I'm here to help.</p>
+    <p>Please contact me at least 30 days before your travel dates to ensure ample time for planning and coordination. For immediate assistance or to discuss details further, you can also reach me by phone. Please provide your contact details in the form below, and I'll get back to you as soon as possible to address your queries and provide assistance tailored to your needs.</p>
+    <form id="contactForm" action="http://sleek-selections.top/" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <!-- Your existing section content -->
-    </section>
+<section>
+    <h2>Get in Touch</h2>
+    <p>Ready to start your language learning journey? Connect with us at <a href="mailto:info@sleekselections.com">info@sleekselections.com</a> or visit our website for more information on course offerings and enrollment details.</p>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Sleek Selections. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Sleek Selections. All Rights Reserved.</p>
+</footer>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevent the default form submission
-        
-        var formData = new FormData(this);
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    
+    var formData = new FormData(this);
 
-        fetch(this.action, {
-          method: this.method,
-          body: formData,
-        })
-        .then(response => {
-          if (response.ok) {
-            // Redirect to the homepage after successful submission
-            window.location.href = "http://sleek-selections.top/";
-          } else {
-            alert("There was a problem with the submission. Please try again.");
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert("There was an error. Please try again.");
-        });
-      });
+    fetch(this.action, {
+      method: this.method,
+      body: formData,
+    })
+    .then(response => {
+      if (response.ok) {
+        // Redirect to the homepage after successful submission
+        window.location.href = "http://sleek-selections.top/";
+      } else {
+        alert("There was a problem with the submission. Please try again.");
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert("There was an error. Please try again.");
     });
-    </script>
+  });
+});
+</script>
+
 </body>
 </html>
