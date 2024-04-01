@@ -1,78 +1,137 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleek Selections - Master Urdu, Hindi, and Arabic Online</title>
     <style>
-        /* Your existing styles here */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa; /* Light grey background for a clean look */
+            color: #313639; /* Dark grey text for elegance and readability */
+        }
+
+        header {
+            background-color: #005792; /* Deep, professional blue */
+            color: #ffffff; /* Crisp white text */
+            padding: 20px 10%;
+            text-align: center; /* Centralized header for focus */
+        }
+
+        nav a {
+            color: #ffffff; /* Adjusted for better visibility */
+            margin: 0 10px; /* Spacing between nav links */
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Gold color for hover state */
+        }
+
+        section {
+            padding: 60px 10%;
+            margin: 30px 0;
+            background-color: #ffffff; /* Pure white for content sections */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 10px; /* Soft rounded corners for a modern look */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif; /* Modern sans-serif for headings */
+        }
+
+        h1 {
+            font-size: 2.25em;
+            color: #ffffff; /* White for header texts */
+        }
+
+        h2 {
+            font-size: 1.75em;
+            color: #005792; /* Echoing the header color for coherence */
+        }
+
+        h3 {
+            font-size: 1.25em;
+            color: #005792; /* Dark blue for section headings */
+        }
+
+        p, li {
+            line-height: 1.6; /* Improved readability through line spacing */
+        }
+
+        a, a:visited {
+            color: #007cba; /* Attractive, clickable blue */
+            transition: color 0.2s; /* Smooth transition for hover effects */
+        }
+
+        a:hover {
+            color: #005792; /* Darker shade on hover for interactive feel */
+        }
+
+        .course-list {
+            list-style-type: circle; /* Elegant circle bullets */
+            margin: 20px 0; /* Proper spacing around the list */
+            padding-left: 20px; /* Indentation for clarity */
+        }
+
+        footer {
+            background-color: #313639; /* Dark footer for contrast */
+            color: #ffffff; /* Text stands out in white */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px; /* Ensures spacing before the footer */
+        }
+
+        .highlight {
+            color: #007cba; /* Bright, attention-grabbing blue */
+            font-weight: bold; /* Extra emphasis */
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Sleek Selections</h1>
-    <p>Unlock the Power of Languages & Travel </p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="travel.html">Travel Assistance</a>
-        <a href="contact.html">Contact Me </a>
-    </nav>
-</header>
+    <header>
+        <h1>Sleek Selections</h1>
+        <p>Unlock the Power of Languages & Travel </p>
+        <!-- Navigation Menu -->
+ 
+   <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="travel.html">Travel Assistance</a>
+            <a href="contact.html">Contact Me </a>
+        </nav>
+    </header>
 
-<section>
-    <h2>Contact Us</h2>
-    <p>Have a question or inquiry related to language learning, travel assistance, or purchase help in Pakistan, India, or Dubai? Feel free to reach out to me for any assistance you may need. Whether you're looking for a travel companion, need help navigating local customs, or require language translation services, I'm here to help.</p>
-    <p>Please contact me at least 30 days before your travel dates to ensure ample time for planning and coordination. For immediate assistance or to discuss details further, you can also reach me by phone. Please provide your contact details in the form below, and I'll get back to you as soon as possible to address your queries and provide assistance tailored to your needs.</p>
-    <form id="contactForm" action="http://sleek-selections.top/" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-</section>
+  <section>
+        <h2>Contact Us</h2>
+        <p>Have a question or inquiry related to language learning, travel assistance, or purchase help in Pakistan, India, or Dubai? Feel free to reach out to me for any assistance you may need. Whether you're looking for a travel companion, need help navigating local customs, or require language translation services, I'm here to help.</p>
+        <p>Please contact me at least 30 days before your travel dates to ensure ample time for planning and coordination. For immediate assistance or to discuss details further, you can also reach me by phone. Please provide your contact details in the form below, and I'll get back to you as soon as possible to address your queries and provide assistance tailored to your needs.</p>
+        <form onsubmit="event.preventDefault(); window.location='http://sleek-selections.top/';">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 
-<section>
-    <h2>Get in Touch</h2>
-    <p>Ready to start your language learning journey? Connect with us at <a href="mailto:info@sleekselections.com">info@sleekselections.com</a> or visit our website for more information on course offerings and enrollment details.</p>
-</section>
+  
 
-<footer>
-    <p>&copy; 2024 Sleek Selections. All Rights Reserved.</p>
-</footer>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Ready to start your language learning journey? Connect with us at <a href="mailto:info@sleekselections.com">info@sleekselections.com</a> or visit our website for more information on course offerings and enrollment details.</p>
+    </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent the default form submission
-    
-    var formData = new FormData(this);
-
-    fetch(this.action, {
-      method: this.method,
-      body: formData,
-    })
-    .then(response => {
-      if (response.ok) {
-        // Redirect to the homepage after successful submission
-        window.location.href = "http://sleek-selections.top/";
-      } else {
-        alert("There was a problem with the submission. Please try again.");
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert("There was an error. Please try again.");
-    });
-  });
-});
-</script>
+    <footer>
+        <p>&copy; 2024 Sleek Selections. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
